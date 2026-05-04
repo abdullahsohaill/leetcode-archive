@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - name: Sync
-        # Using a fork that has active commits/fixes for the new API
-        uses: alfa-m/leetcode-sync@master 
+        # Use the primary maintained organization fork
+        uses: leetcode-sync/leetcode-sync@master 
         with:
           github-token: ${{ github.token }}
           leetcode-csrf-token: ${{ secrets.LEETCODE_CSRF_TOKEN }}
